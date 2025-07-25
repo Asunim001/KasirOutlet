@@ -1,4 +1,4 @@
-const sheetUrl = 'https://script.google.com/macros/s/AKfycbywdITTqIjVLYdnPUJ2RBC1zLFUIWKEfndKZOyDNOptULscDN-fNMNH5vjFoKkw7v4zCg/exec'; // ganti dengan Script ID kamu
+const sheetUrl = 'https://corsproxy.io/?https://script.google.com/macros/s/AKfycbywdITTqIjVLYdnPUJ2RBC1zLFUIWKEfndKZOyDNOptULscDN-fNMNH5vjFoKkw7v4zCg/exec'; // ganti dengan Script ID kamu
 
 document.getElementById('loginForm').addEventListener('submit', async (e) => {
   e.preventDefault();
