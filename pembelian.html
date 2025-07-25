@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembelian Stok</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/pembelian.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Input Pembelian Stok</h2>
+    <form id="formPembelian">
+      <label>Nama Item:</label>
+      <input type="text" id="nama" required><br/>
+
+      <label>Jumlah:</label>
+      <input type="number" id="jumlah" min="1" required><br/>
+
+      <label>Harga Modal:</label>
+      <input type="number" id="harga" required><br/>
+
+      <label>Vendor:</label>
+      <input type="text" id="vendor" required><br/>
+
+      <button type="submit">Simpan Pembelian</button>
+    </form>
+    <p id="pesan" style="color:green;"></p>
+  </div>
+</body>
+</html>
