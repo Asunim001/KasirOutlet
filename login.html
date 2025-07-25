@@ -3,20 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login Kasir Outlet</title>
+  <title>Dashboard Kasir</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/dashboard.js" defer></script>
 </head>
 <body>
-  <div class="login-container">
-    <h2>Login Kasir Outlet</h2>
-    <form id="loginForm">
-      <input type="email" id="email" placeholder="Email" required /><br/>
-      <input type="password" id="password" placeholder="Password" required /><br/>
-      <button type="submit">Login</button>
-    </form>
-    <p id="errorMsg" style="color:red;"></p>
-  </div>
+  <div class="container">
+    <h2>Dashboard Kasir</h2>
+    <p id="welcomeText"></p>
 
-  <script src="js/auth.js"></script>
+    <div class="card">
+      <h3>Transaksi Hari Ini</h3>
+      <p id="todayTransactions">Loading...</p>
+    </div>
+
+    <div class="card">
+      <h3>5 Menu Terlaris</h3>
+      <ul id="topItems"></ul>
+    </div>
+
+    <div class="card">
+      <h3>Stok Hampir Habis</h3>
+      <ul id="lowStock"></ul>
+    </div>
+  </div>
 </body>
 </html>
