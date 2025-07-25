@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transaksi Kasir</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/transaksi.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Transaksi Penjualan</h2>
+    <form id="transaksiForm">
+      <label>Item:</label>
+      <select id="item" required></select><br/>
+
+      <label>Jumlah:</label>
+      <input type="number" id="qty" value="1" min="1" required /><br/>
+
+      <label>Harga Satuan:</label>
+      <input type="number" id="harga" disabled /><br/>
+
+      <label>Total Harga:</label>
+      <input type="number" id="total" disabled /><br/>
+
+      <label>Metode Pembayaran:</label>
+      <select id="metode">
+        <option value="Tunai">Tunai</option>
+        <option value="QRIS">QRIS</option>
+      </select><br/>
+
+      <label>Uang Dibayar:</label>
+      <input type="number" id="uang" /><br/>
+
+      <label>Kembalian:</label>
+      <input type="number" id="kembalian" disabled /><br/>
+
+      <button type="submit">Simpan Transaksi</button>
+    </form>
+    <p id="notif" style="color:green;"></p>
+  </div>
+</body>
+</html>
