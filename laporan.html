@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Laporan - Kasir Kedai</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <h3>Laporan Penjualan</h3>
+
+    <div class="row mt-3">
+      <div class="col-md-4">
+        <label>Filter Tanggal:</label>
+        <input type="date" id="tanggalMulai" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label>Sampai:</label>
+        <input type="date" id="tanggalAkhir" class="form-control">
+      </div>
+      <div class="col-md-4 d-flex align-items-end">
+        <button class="btn btn-success w-100" onclick="getLaporan()">Tampilkan</button>
+      </div>
+    </div>
+
+    <div class="table-responsive mt-4">
+      <table class="table table-bordered" id="laporanTable">
+        <thead class="table-light">
+          <tr>
+            <th>Tanggal</th>
+            <th>Item</th>
+            <th>Jumlah Terjual</th>
+            <th>Omzet</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div id="ringkasan" class="mt-4"></div>
+  </div>
+
+  <script src="js/laporan.js"></script>
+</body>
+</html>
